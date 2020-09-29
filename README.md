@@ -38,3 +38,7 @@ Now you can simply run
 ```
 bbbdl https://my.bbb.node/playback/presentation/2.0/playback.html?meetingId=ABC123DEF
 ```
+
+## Outlook
+I might be able to extend features to other kinds of videos like group conferences,
+videos without webcam and so on as soon as my exams are done.
