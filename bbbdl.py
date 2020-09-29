@@ -34,6 +34,9 @@ def download(bbb):
     # merge presentations video and webcams audio
     os.system("ffmpeg -i v.mp4 -i a.mp4 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 " + m_name)
 
+    # remove auxiliary files
+    os.remove("v.mp4")
+    os.remove("a.mp4")
 
 if __name__ == "__main__":
     # check for dependencies:
