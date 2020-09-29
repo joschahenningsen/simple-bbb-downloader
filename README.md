@@ -4,43 +4,37 @@ This file automates downloads from Big Blue Button.
 
 _Note: This was made to download one particular video. 
 It has not yet been tested anywhere else, nor does it work on videos 
-without webcam **and** presentation enabled._
+without webcam **and** presentation enabled._ 
 
-## Prerequisites
+## Prerequisites 
 This code-snippet depends on:
-```shell
-python3
+```
+python3 
 wget
 ffmpeg
 ```
 
 On debian run
-```shell
-sudo apt update && sudo apt install python3 wget ffmpeg -y
+```
+sudo apt update && sudo apt install python3 wget ffmpeg -y 
 ```
 
 ## Usage
-<<<<<<< HEAD
-Download repository:
-```shell
-git clone https://github.com/joschahenningsen/simple-bbb-downloader.git ~/bbb-dl
-=======
 ```
 git clone git@github.com:joschahenningsen/simple-bbb-downloader.git ~/bbb-dl
->>>>>>> 33e4bd3079ea65273296a508aab8da2e170d3058
 cd ~/bbb-dl
 python3 bbbdl.py https://my.bbb.node/playback/presentation/2.0/playback.html?meetingId=ABC123DEF
 ```
 
-If you feel fancy add an alias to `~/.bashrc`, `~/.zshrc`, `~/.whatevershellyoumightbeusingrc` etc.:
+If you feel fancy add an alias to `~/.bashrc` or `~/.zshrc`:
 
-```shell
+```
 alias bbbdl='python3 ~/bbb-dl/bbbdl.py'
 ```
 
-Now you can simply run
+Now you can simply run 
 
-```shell
+```
 bbbdl https://my.bbb.node/playback/presentation/2.0/playback.html?meetingId=ABC123DEF
 ```
 
