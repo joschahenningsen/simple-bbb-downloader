@@ -20,9 +20,8 @@ sudo apt update && sudo apt install python3 wget ffmpeg -y
 ```
 
 ## Usage
-Download repository:
 ```
-git clone https://github.com/joschahenningsen/simple-bbb-downloader.git ~/bbb-dl
+git clone git@github.com:joschahenningsen/simple-bbb-downloader.git ~/bbb-dl
 cd ~/bbb-dl
 python3 bbbdl.py https://my.bbb.node/playback/presentation/2.0/playback.html?meetingId=ABC123DEF
 ```
