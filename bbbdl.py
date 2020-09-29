@@ -28,8 +28,8 @@ def download(bbb):
     a_url = baseurl + "presentation/" + meetingId + "/video/webcams.mp4"
 
     # download presentation and webcam
-    os.system("wget " + v_url + " -O v.mp4")
-    os.system("wget " + a_url + " -O a.mp4")
+    os.system("wget " + v_url + " -O v.mp4 -q --show-progress")
+    os.system("wget " + a_url + " -O a.mp4 -q --show-progress")
 
     # merge presentations video and webcams audio
     os.system("ffmpeg -i v.mp4 -i a.mp4 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 " + m_name)
