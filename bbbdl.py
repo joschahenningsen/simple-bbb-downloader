@@ -20,7 +20,7 @@ def download(bbb):
     m_data = urllib.request.urlopen(m_url).read()
     root = ET.fromstring(m_data)
     m_name = root.find("meta").find("meetingName").text + ".mp4"
-    print("Downloading to " + m_name + ".mp4")
+    print("Downloading to " + m_name)
     m_name = str.replace(m_name, " ", "\\ ")
 
     # extract video and audio source
